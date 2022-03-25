@@ -19,7 +19,7 @@ class Instagram(SocialMedia):
         
     def getPosts(self):
         if len(self.lst) == 0:
-            print("there is no posts")
+            print("there are no posts")
             return -1
             
         print("instagram posts: ",self.lst)
@@ -35,7 +35,7 @@ class Twitter(SocialMedia):
             print("length of the tweet should be under 280")
     def getTweets(self):
         if len(self.lst) == 0:
-            print("there is no tweets")
+            print("there are no tweets")
             return -1
         print("twitter tweets: ",self.lst)
             
