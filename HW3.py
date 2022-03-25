@@ -41,19 +41,3 @@ class Twitter(SocialMedia):
         return self.lst
             
 
-
-body = input()
-
-
-twitter = Twitter()
-twitter.createNewTweet(body)
-
-instagram = Instagram()
-instagram.publishNewPost(body)
-
-twitter.getName()
-instagram.getName()
-
-
-twitter.getTweets()
-instagram.getPosts()
