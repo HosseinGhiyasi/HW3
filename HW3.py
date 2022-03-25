@@ -3,7 +3,7 @@ class SocialMedia:
         self.app_name = name
         self.lst = []
     def getName(self):
-        print (self.app_name)
+        return self.app_name
 
 
 
@@ -22,7 +22,7 @@ class Instagram(SocialMedia):
             print("there are no posts")
             return -1
             
-        print("instagram posts: ",self.lst)
+        return self.lst
 
 class Twitter(SocialMedia):
     def __init__(self):
@@ -37,7 +37,8 @@ class Twitter(SocialMedia):
         if len(self.lst) == 0:
             print("there are no tweets")
             return -1
-        print("twitter tweets: ",self.lst)
+        
+        return self.lst
             
 
 
