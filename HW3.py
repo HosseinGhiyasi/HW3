@@ -1,9 +1,9 @@
 class SocialMedia:
     def __init__(self,name):
-        self.companyname = name
+        self.app_name = name
         self.lst = []
-    def getname(self):
-        print (self.companyname)
+    def getName(self):
+        print (self.app_name)
 
 
 
@@ -19,7 +19,7 @@ class Instagram(SocialMedia):
         
     def getPosts(self):
         if len(self.lst) == 0:
-            print("list is empty")
+            print("there is no posts")
             return -1
             
         print("instagram posts: ",self.lst)
@@ -35,7 +35,7 @@ class Twitter(SocialMedia):
             print("length of the tweet should be under 280")
     def getTweets(self):
         if len(self.lst) == 0:
-            print("list is empty")
+            print("there is no tweets")
             return -1
         print("twitter tweets: ",self.lst)
             
@@ -50,8 +50,8 @@ twitter.createNewTweet(body)
 instagram = Instagram()
 instagram.publishNewPost(body)
 
-twitter.getname()
-instagram.getname()
+twitter.getName()
+instagram.getName()
 
 
 twitter.getTweets()
